@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# These are all binary - .asm and .hex files must have 0x1A EOF marker at the end.
+*.asm binary
+*.bin binary
+*.hex binary

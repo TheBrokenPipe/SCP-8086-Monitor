@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCP 8086 Monitor Collection</title>
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;border:none'>
+        <tr>
+          <td style='border:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Version 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Revision 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Source Code 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Cromemco 4FDC 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Cromemco 16FDC 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                NorthStar SD 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                SCP Disk Master 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Tarbell DD 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border:solid windowtext 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                Tarbell SD 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1.4 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1980-02-18 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.4_1980-02-18.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.4_1980-02-18_CROMEMCO4FDC.BIN">BIN</a>/<a href="./files/MON_1.4_1980-02-18_CROMEMCO4FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td rowspan=3 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                N/A 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.4_1980-02-18_NORTHSTAR.BIN">BIN</a>/<a href="./files/MON_1.4_1980-02-18_NORTHSTAR.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td rowspan=3 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                N/A 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td colspan=2 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.4_1980-02-18_TARBELL.BIN">BIN</a>/<a href="./files/MON_1.4_1980-02-18_TARBELL.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan=4 style='border:solid windowtext 1.0pt;border-top:none;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1.5 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1980-04-24 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1980-04-24.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1980-04-24_CROMEMCO4FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1980-04-24_CROMEMCO4FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1980-04-24_NORTHSTAR.BIN">BIN</a>/<a href="./files/MON_1.5_1980-04-24_NORTHSTAR.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td colspan=2 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1980-04-24_TARBELL.BIN">BIN</a>/<a href="./files/MON_1.5_1980-04-24_TARBELL.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1981-05-26 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1981-05-26.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1981-05-26_CROMEMCO4FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1981-05-26_CROMEMCO4FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1981-05-26_NORTHSTAR.BIN">BIN</a>/<a href="./files/MON_1.5_1981-05-26_NORTHSTAR.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td colspan=2 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1981-05-26_TARBELL.BIN">BIN</a>/<a href="./files/MON_1.5_1981-05-26_TARBELL.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1982-03-19 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_CROMEMCO4FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_CROMEMCO4FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_CROMEMCO16FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_CROMEMCO16FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_NORTHSTAR.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_NORTHSTAR.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_SCPDISKMASTER.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_SCPDISKMASTER.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_TARBELLDD.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_TARBELLDD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-03-19_TARBELLSD.BIN">BIN</a>/<a href="./files/MON_1.5_1982-03-19_TARBELLSD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1982-06-10 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_CROMEMCO4FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_CROMEMCO4FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_CROMEMCO16FDC.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_CROMEMCO16FDC.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_NORTHSTAR.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_NORTHSTAR.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_SCPDISKMASTER.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_SCPDISKMASTER.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_TARBELLDD.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_TARBELLDD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.5_1982-06-10_TARBELLSD.BIN">BIN</a>/<a href="./files/MON_1.5_1982-06-10_TARBELLSD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1.6 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1982-??-?? 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.6_1982_XX-XX.ASM">ASM</a>* 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td colspan=3 rowspan=2 style='border-top:none;border-left:none;border-bottom:
+            solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                N/A 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.6_1982_XX-XX_SCPDISKMASTER.BIN">BIN</a>*/<a href="./files/MON_1.6_1982_XX-XX_SCPDISKMASTER.HEX">HEX</a>* 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.6_1982_XX-XX_TARBELLDD.BIN">BIN</a>/<a href="./files/MON_1.6_1982_XX-XX_TARBELLDD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td rowspan=2 style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                N/A 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr style='height:15.05pt'>
+          <td style='border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;
+            height:15.05pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1.9 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                1983-08-04 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.9_1983_08_04.ASM">ASM</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.9_1983_08_04_SCPDISKMASTER.BIN">BIN</a>/<a href="./files/MON_1.9_1983_08_04_SCPDISKMASTER.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+          <td style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+            border-right:solid windowtext 1.0pt;
+            padding:0cm 5.4pt 0cm 5.4pt;height:15.05pt'>
+            <p align=center style='margin-bottom:0cm;text-align:center;
+              line-height:normal'>
+              <span style='font-family:Consolas'>
+                <a href="./files/MON_1.9_1983_08_04_TARBELLDD.BIN">BIN</a>/<a href="./files/MON_1.9_1983_08_04_TARBELLDD.HEX">HEX</a> 
+                <o:p></o:p>
+              </span>
+            </p>
+          </td>
+        </tr>
+      </table>
+      <p style='font-family:Consolas'>
+        <o:p>&nbsp;</o:p>
+      </p>
+      <p style='font-family:Consolas'>*Reconstructed based on existing binary.</p>
+    </div>
+  </body>
+</html>
